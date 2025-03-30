@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>产品中心 - 江苏海宏信息科技有限公司</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content">
+      <img src="C:\Users\dyfan\Pictures\Screenshots\屏幕截图 2025-03-29 155142.png" alt="海宏科技" class="logo">
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html"><i class="fas fa-home"></i> 首页</a></li>
+          <li><a href="products.html" class="active"><i class="fas fa-cube"></i> 产品中心</a></li>
+          <li><a href="news.html"><i class="fas fa-newspaper"></i> 新闻资讯</a></li>
+          <li><a href="support.html"><i class="fas fa-headset"></i> 服务支持</a></li>
+          <li><a href="about.html"><i class="fas fa-info-circle"></i> 关于我们</a></li>
+          <li><a href="contact.html"><i class="fas fa-phone-alt"></i> 联系我们</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 新增轮播图模块 -->
+  <div class="swiper-container" style="width: 100%; height: 550px;">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" style="background: url('E:\\网页学习\\image\\微信图片_20250329193051.jpg') center/cover;"></div>
+      <div class="swiper-slide" style="background: url('E:\\网页学习\\image\\微信图片_20250329193050.jpg') center/cover;"></div>
+      <div class="swiper-slide" style="background: url('E:\\网页学习\\image\\微信图片_20250329192909.jpg') center/cover;"></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <main>
+    <section class="section">
+      <h2><i class="fas fa-cubes"></i> 产品中心</h2>
+      <div class="product-grid">
+        <article class="product-card">
+          <i class="fas fa-lock fa-3x"></i>
+          <h3>智能钢丝铅封机</h3>
+          <p>首创无序一次性投入高保封铅封即可自动分离、自动识别、自动发放</p>
+        </article>
+        <article class="product-card">
+          <i class="fas fa-lock-open fa-3x"></i>
+          <h3>智能高保封铅封机</h3>
+          <p>配合管理系统及车牌识别、集装箱号识别，实现智能化管理</p>
+        </article>
+        <article class="product-card">
+          <i class="fas fa-truck fa-3x"></i>
+          <h3>抑尘定量装车系统</h3>
+          <p>适合粮食煤炭沙石木薯干等散料的抑尘&定量装车系统</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="main-footer">
+    <div class="footer-content">
+      <h3><i class="fas fa-map-marker-alt"></i> 联系我们</h3>
+      <p>地址：江苏省XX市XX区科技大道888号</p>
+      <p>电话：(0512) 8888-8888</p>
+      <p>邮箱：contact@tianxintech.com</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper-container', {
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      }
+    });
+  </script>
+</body>
+</html>
